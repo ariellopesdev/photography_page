@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Boot CSS*/
+body, html{
+    height: 100%;
+}
+#background{
+    height: 100vh;
+    background-image: url('../images/landscape_main.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    right: 0;
+    top: 0;
+    background-size: cover;
+}
+.center {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.w25{
+    width: 22%;
+}
+.w50{
+    width: 50%;
+    padding: 0 10%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+/*Estilização*/
+
+header{
+    height: 80px;
+}
+header div.center{
+    border-bottom: 1px solid white;
+}
+header i.fa{
+    font-size: 40px;
+    line-height:80px;
+    color: white;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    line-height: 80px;
+}
+header nav ul li{
+    margin: 0 40px;
+    color: white;
+}
+header nav ul button{
+    margin: 0 40px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius:15px;
+    background-color: transparent;
+    color: white;
+}
+section{
+    height: calc(100%-80px);
+}
+section article#infos{
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section article#infos i.fa{
+    margin: 10px 0;
+    font-size: 60px;
+}
+section article#infos h1{
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+section article#infos h2{
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+section article#infos ul{
+    margin: 10px 0;
+    list-style: none;
+}
+section article#infos ul li{
+    line-height: 25px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid white;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    background: rgba( 0, 0, 0, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+section article#infos ul li > b{
+    font-size: 10px;
+    font-weight: normal;
+    color: rgb(146, 146, 146);
+}
+section article#way{
+    height: calc(100%-400px);
+    color: white;
+    width: 100%;
+}
+section article#way ul{
+    list-style: none;
+    height: 70px;
+    margin: 15px 0;
+}
+section article#way ul li{
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    border-bottom: 1px solid white;
+}
+section article#way ul li:nth-child(2),
+section article#way ul li:nth-child(3),
+section article#way ul li:nth-child(4)
+{
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+section article#way ul li h3{
+    padding: 0 13px;
+    margin-right:15px;
+    border: 1px solid white;
+    background-color: transparent;
+    height: 70%;
+    line-height: 50px;
+    border-radius: 50%;
+}
+section article#way ul li p{
+    font-size: 15px;
+}
+main{
+    height: 100vh;
+    background-color: rgb(24, 18, 18);
+}
+section#header{
+    height: 200px;
+}
+section#header article#title{
+    width: 100%;
+    height: 200px;
+}
+section#header article#title h2{
+    padding-top: 75px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+section#header article#title h1{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+section#header article#title button{
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    height:60px;
+    width: 60px;
+    position: absolute;
+    right: 6%;
+    top: 112vh;
+    color: rgb(139, 139, 139);
+    font-size:20px;
+}
+section#cards{
+    height: calc(100%-200px);
+}
+section#cards ul{
+    list-style: none;
+}
+section#cards ul li{
+    width: 25%;
+    display: flex;
+    justify-content:center;
+}
+section#cards ul li img{
+    width: 280px;
+    height: 372px;
+    position: absolute;
+    z-index: 1;
+}
+section#cards ul li div.text{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    width: 280px;
+    height: 372px;
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    align-items:center;
+}
+section#cards ul li label{
+    color: white;
+    margin-bottom: 15px;
+    font-size:27px;
+    font-family: 'Times New Roman', Times, serif;
+}
+section#cards ul li h3{
+    color: rgb(105, 105, 105);
+    margin-bottom: 15px;
+    font-size:15px;
+}
+footer{
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    height:80px;
+    background-color: black;
+}
+footer i.fa{
+    color: rgb(139, 139, 139);
+}
